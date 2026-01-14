@@ -15,16 +15,16 @@
             background-color: #0a0a0a; 
         }
         
-        /* 隱藏藍色橫條的核心位移技術：採用穩定的 -40px */
+        /* 核心位移技術：隱藏 Google 藍色橫條 */
+        /* 位移 45px 能遮住大部手機瀏覽器下的 Google 工具欄 */
         iframe { 
             position: absolute; 
             top: 0; 
             left: 0; 
             width: 100%; 
-            /* 將高度補償與位移量同步設為 40px */
-            height: calc(100% + 40px); 
+            height: calc(100% + 45px); 
             border: none; 
-            margin-top: -40px; 
+            margin-top: -45px; 
             background: #0a0a0a;
         }
     </style>
