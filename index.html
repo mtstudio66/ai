@@ -5,29 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>AI專業預測系統</title>
     <style>
-        /* 基礎全螢幕設定，隱藏外部捲軸 */
-        body, html { 
-            margin: 0; 
-            padding: 0; 
-            height: 100%; 
-            width: 100%;
-            overflow: hidden; 
-            background-color: #0a0a0a; 
-        }
-        
-        /* 核心優化：使用您原本穩定的 -1px 位移，確保文字不被遮擋 */
-        iframe { 
-            position: absolute; 
-            top: 0; 
-            left: 0; 
-            width: 100%; 
-            /* 補償位移產生的高度差，確保底部不留白 */
-            height: calc(100% + 1px); 
-            border: none; 
-            margin-top: -1px; 
-            /* 提升載入平滑感 */
-            background: #0a0a0a;
-        }
+        body, html { margin: 0; padding: 0; height: 100%; overflow: hidden; background-color: #0a0a0a; }
+        /* 維持原本穩定的 -1px 位移 */
+        iframe { position: absolute; top: 0; left: 0; width: 100%; height: calc(100% + 1px); border: none; margin-top: -1px; }
     </style>
 </head>
 <body>
