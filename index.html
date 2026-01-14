@@ -5,29 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>AI專業預測系統</title>
     <style>
+        /* 基礎全螢幕設定，隱藏外部捲軸 */
         body, html { 
             margin: 0; 
             padding: 0; 
             height: 100%; 
-            width: 100%; 
+            width: 100%;
             overflow: hidden; 
             background-color: #0a0a0a; 
         }
         
-        /* 使用優化後的 -38px 位移，避免遮擋內部文字 */
+        /* 隱藏藍色橫條的核心位移技術：採用穩定的 -40px */
         iframe { 
             position: absolute; 
             top: 0; 
             left: 0; 
             width: 100%; 
-            height: calc(100% + 38px); 
+            /* 將高度補償與位移量同步設為 40px */
+            height: calc(100% + 40px); 
             border: none; 
-            margin-top: -38px; 
+            margin-top: -40px; 
             background: #0a0a0a;
         }
     </style>
 </head>
 <body>
-    <iframe src="https://script.google.com/macros/s/AKfycbzNki6YXL7zZm8zVjDJaKi95GBvZLkFGHbbpFa-mT66fCXsmxKaoipScDFDiyUc1O3U/exec"></iframe>
+    <iframe src="https://script.google.com/macros/s/AKfycbzMoUA3LMHK-layjUCpiwB-kvdLuaLrLNYxMy-6a8r-UKC7bsbx4WiL6sN95Q596a25/exec"></iframe>
 </body>
 </html>
