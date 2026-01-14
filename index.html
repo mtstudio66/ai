@@ -7,12 +7,10 @@
     
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="apple-mobile-web-app-title" content="MASTER AI">
-    
     <link rel="apple-touch-icon" href="https://cdn-icons-png.flaticon.com/512/2156/2156007.png">
 
     <style>
-        /* 徹底隱藏捲軸並讓背景變黑，與系統一致 */
+        /* 讓頁面滿版並隱藏滾動條，達成去橫條效果 */
         body, html { 
             margin: 0; 
             padding: 0; 
@@ -22,13 +20,12 @@
             background-color: #0a0a0a; 
         }
         
-        /* 核心：iframe 覆蓋技巧 */
+        /* 核心：用 iframe 蓋住頂部藍色橫條 */
         iframe { 
             position: absolute; 
             top: 0; 
             left: 0; 
             width: 100%; 
-            /* 讓高度多出一點點，確保蓋掉頂部橫條 */
             height: calc(100% + 1px); 
             border: none; 
             margin-top: -1px; 
