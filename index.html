@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>AI專業預測系統</title>
     <style>
-        /* 確保頁面填滿螢幕並隱藏滾動條 */
+        /* 確保頁面滿版並隱藏外層捲軸 */
         body, html { 
             margin: 0; 
             padding: 0; 
@@ -15,16 +15,16 @@
             background-color: #0a0a0a; 
         }
         
-        /* 修正後的隱藏橫條代碼：微調位移以防遮擋標題 */
+        /* 調整位移數值：將 -45px 改為 -36px */
         iframe { 
             position: absolute; 
             top: 0; 
             left: 0; 
             width: 100%; 
-            /* 將高度設為超過 100% 並向上位移 45px */
-            height: calc(100% + 45px); 
+            /* 同步調整高度補償值 */
+            height: calc(100% + 36px); 
             border: none; 
-            margin-top: -45px; 
+            margin-top: -36px; 
         }
     </style>
 </head>
