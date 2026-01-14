@@ -5,15 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>AI專業預測系統</title>
     <style>
-        body, html { margin: 0; padding: 0; height: 100%; width: 100%; overflow: hidden; background-color: #0a0a0a; }
+        /* 基礎設定 */
+        body, html { 
+            margin: 0; 
+            padding: 0; 
+            height: 100%; 
+            width: 100%; 
+            overflow: hidden; 
+            background-color: #0a0a0a; 
+        }
+        
+        /* 核心調整：減少位移量讓內容下移 */
         iframe { 
             position: absolute; 
             top: 0; 
             left: 0; 
             width: 100%; 
-            height: calc(100% + 45px); 
+            /* 位移量減少至 -30px，讓內容多出 15px 的顯示空間 */
+            height: calc(100% + 30px); 
             border: none; 
-            margin-top: -45px; 
+            margin-top: -30px; 
             background: #0a0a0a;
         }
     </style>
