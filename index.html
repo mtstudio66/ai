@@ -5,12 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>AI專業預測系統</title>
     <style>
-        /* 這段 CSS 會讓系統變全螢幕，並切掉 Google 的藍色橫條 */
-        body, html { margin: 0; padding: 0; height: 100%; overflow: hidden; background-color: #0a0a0a; }
-        iframe { position: absolute; top: 0; left: 0; width: 100%; height: calc(100% + 50px); border: none; margin-top: -50px; }
+        body, html { 
+            margin: 0; 
+            padding: 0; 
+            height: 100%; 
+            width: 100%; 
+            overflow: hidden; 
+            background-color: #0a0a0a; 
+        }
+        
+        /* 使用優化後的 -38px 位移，避免遮擋內部文字 */
+        iframe { 
+            position: absolute; 
+            top: 0; 
+            left: 0; 
+            width: 100%; 
+            height: calc(100% + 38px); 
+            border: none; 
+            margin-top: -38px; 
+            background: #0a0a0a;
+        }
     </style>
 </head>
 <body>
-    <iframe src="https://script.google.com/macros/s/AKfycbzMoUA3LMHK-layjUCpiwB-kvdLuaLrLNYxMy-6a8r-UKC7bsbx4WiL6sN95Q596a25/exec"></iframe>
+    <iframe src="https://script.google.com/macros/s/AKfycbzNki6YXL7zZm8zVjDJaKi95GBvZLkFGHbbpFa-mT66fCXsmxKaoipScDFDiyUc1O3U/exec"></iframe>
 </body>
 </html>
