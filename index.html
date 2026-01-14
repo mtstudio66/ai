@@ -15,16 +15,16 @@
             background-color: #0a0a0a; 
         }
         
-        /* 隱藏 Google 藍色橫條的關鍵核心代碼 */
+        /* 修正後的隱藏橫條代碼：微調位移以防遮擋標題 */
         iframe { 
             position: absolute; 
             top: 0; 
             left: 0; 
             width: 100%; 
-            /* 位移技術：將高度增加並向上移動 50px 以切除橫條 */
-            height: calc(100% + 50px); 
+            /* 將高度設為超過 100% 並向上位移 45px */
+            height: calc(100% + 45px); 
             border: none; 
-            margin-top: -50px; 
+            margin-top: -45px; 
         }
     </style>
 </head>
